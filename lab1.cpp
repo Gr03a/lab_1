@@ -40,5 +40,19 @@ int main(void)
     }
     printf("\n max: %d \n min: %d \n max-min=%d \n", max, min, (max - min));
     free(array);
+
+      // 4 задание
+  int sum;
+  int matrix[5][5];
+  for (int i = 0; i<5; i++)
+  {
+    sum = 0;
+    for (int j= 0; j<5; j++){
+      matrix[i][j] = -50 + rand() % 101;
+      sum += matrix[i][j];
+      printf("%4d", matrix[i][j]);
+    }
+    printf("%4d\n",sum);
+  }
     return 0;
 }
